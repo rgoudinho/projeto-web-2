@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="resources/imagens/bart.png">
+
+  <title>Cantinho do Rock</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="libraries/bootstrap-4.1 (1).3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libraries/bootstrap-4.1 (1).3-dist/css/carousel.css" rel="stylesheet">
+  <link href="resources/estilo/estilo-index.css" rel="stylesheet">
+
+</head>
+
+<body class="black">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark black fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil </a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="resources/imagens/UK_maiden.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Banda talvez venha ao Brasil em 2019 e "pode ser no Rock in Rio"</h1>
+              <p>Durante palestra realizada para empresários no VTex Day, em São Paulo, na última segunda-feira (14), o
+                vocalista Bruce Dickinson falou sobre a possibilidade do Iron Maiden voltar ao Brasil para shows. Ele
+                confirmou que a banda não virá em 2018, mas destacou a chance de apresentações em 2019.</p>
+              <p><a class="btn btn-dark" href="https://whiplash.net/materias/news_767/283027-ironmaiden.html"
+                  role="button">Saber mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="resources/imagens/metallica.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Metallica toca no Brasil em 2019.</h1>
+              <p>A coluna de Anselmo Góes no jornal “O Globo” deste domingo (24) diz que o Metallica está acertando uma
+                apresentação no Brasil para o ano que vem.</p>
+              <p><a class="btn btn-dark" href="https://www.radiorock.com.br/2018/06/24/metallica-toca-no-brasil-em-2019-diz-jornalista/"
+                  role="button">Saber mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="resources/imagens/dolores-.jpeg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>A maior perda do Rock em 2018</h1>
+              <p>Dolores O'Riordan morreu afogada em uma banheira após intoxicação alcoólica, segundo o laudo divulgado
+                nesta quinta-feira (6), dia em que ela completaria 47 anos. A vocalista o grupo The Cranberries morreu
+                em 15 de janeiro aos 46 anos e a causa da morte era considerada acidental.</p>
+              <p><a class="btn btn-dark" href="https://g1.globo.com/pop-arte/musica/noticia/2018/09/06/dolores-oriordan-morreu-afogada-em-banheira-apos-intoxicacao-alcoolica-diz-laudo.ghtml"
+                  role="button">Saber mais</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+      ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="frase-1">
+          </div><!-- /.col-lg-4 -->
+          <button class="btn btn-dark" id="botao-frase-1">Trocar frase</button>
+        </div>
+        <div class="col-lg-4">
+          <div id="frase-2">
+          </div><!-- /.col-lg-4 -->
+          <button class="btn btn-dark" id="botao-frase-2">Trocar frase</button>
+        </div>
+        <div class="col-lg-4">
+          <div id="frase-3">
+          </div>
+          <button class="btn btn-dark" id="botao-frase-3" onclick="trocarImagem();">Trocar frase</button>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Bohemian Rhapsody <span class="text-muted">é criticado.</span></h2>
+          <p class="lead">Bohemian Rhapsody está conquistando bons números na bilheteria, mas nem todos ficaram muito
+            felizes com a forma como Freddie Mercury foi retratado no filme.</p>
+        </div>
+        <div class="col-md-5" id="div-image-1">
+          <img id="image-1" class="featurette-image img-fluid mx-auto" src="resources/imagens/bohemian-Freddy---Reproduo---Youtube-1.jpg"
+            alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">GEORGE EZRA APRESENTA NOVO SINGLE <span class="text-muted">E COVER DE JUSTIN
+              BIEBER </span></h2>
+          <p class="lead">O cantor apresentou duas faixas no programa, sendo elas o seu atual single, e um cover
+            incrível de “Love Yourself”, cantada originalmente por Justin Bieber. Ambos os vídeos podem ser vistos no
+            fim da publicação.</p>
+        </div>
+        <div class="col-md-5 order-md-1" id="div-image-2">
+          <img id="image-2" class="featurette-image img-fluid mx-auto" src="resources/imagens/george-ezra-1.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Sonho dele era tocar bateria <span class="text-muted">com o AC/DC</span></h2>
+          <p class="lead">Durante conversa com a Forbes, Dave Grohl revelou que gostaria de tocar bateria no AC/DC, mas
+            seu sonho foi interrompido com o retorno de Phil Rudd à banda, que aparentemente tem de volta o antigo
+            baterista e o vocalista Brian Johnson.</p>
+        </div>
+        <div class="col-md-5" id="div-image-3" onmousemove="adicionaImagemNovaDave(2)" onmouseout="adicionaImagemNovaDave(1)">
+          <img id="image-3" class="featurette-image img-fluid mx-auto" src="resources/imagens/dave-1.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Voltar para o inicio</a></p>
+      <p>&copy; Cantinho do ROCK, se precisar falar conosco click <a href="#">aqui</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script stc='libraries/bootstrap-4.1 (1).3-dist/js/carousel.js'></script>
+  <script src="libraries/bootstrap-4.1 (1).3-dist/js/popper.min.js"></script>
+  <script src="libraries/bootstrap-4.1 (1).3-dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="resources/scripts/index.js"></script>
+</body>
+
+</html>
